@@ -18,6 +18,10 @@ const WaitTime=()=>{
             img:"./images/insurancepolicy.png",
             heading:"Policy Wording",
             subheading:"Download Now"
+        },{
+            img:"./images/insurancepolicy.png",
+            heading:"Policy Wording",
+            subheading:"Download Now"
         }
     ]
     return(
