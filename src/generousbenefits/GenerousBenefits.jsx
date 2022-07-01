@@ -18,7 +18,7 @@ const GenerousBenefits=()=>{
          <Grid container spacing={2} marginTop="120px" marginLeft="320px">
             <Grid item >
                 <Typography variant="h6" color="error">
-                   GENEROUS BENEFITS hello
+                   GENEROUS BENEFITS
                 </Typography>
                 <Typography variant="h3" fontWeight="bold">
                    <span style={{"color":"red"}}>We Say,</span><br/>Why settle for less!   <img src="./images/human.png"/>

@@ -11,7 +11,7 @@ const Heading=()=> {
     
     return(
     <div style={{"marginLeft":"200px"}}>
-            <h6 style={{"marginLeft":"600px"}}>Home <Link><ArrowForwardIosIcon fontSize="small" color="disabled"/></Link>Motor<Link><ArrowForwardIosIcon fontSize="small" color="disabled"/> </Link>Private Car</h6>
+            <h6 style={{"marginLeft":"600px"}}>Home hello <Link><ArrowForwardIosIcon fontSize="small" color="disabled"/></Link>Motor<Link><ArrowForwardIosIcon fontSize="small" color="disabled"/> </Link>Private Car</h6>
             <h1 style={{"color":"darkblue", "fontWeight":"bold","marginLeft":"350px"}}>Limit Your Speed, Not Your Insurance</h1>
             <h4 style={{"marginLeft":"400px"}}>Get a Motor Insurance that fits yours needs & budget! 💰</h4>    
             <Grid container spacing={2}>    
