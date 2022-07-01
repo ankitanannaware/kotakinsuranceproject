@@ -10,6 +10,11 @@ const WaitTime=()=>{
             subheading:"Download Now"
         },
         {
+            img:"./images/brochure.png",
+            heading:"Product Brochure",
+            subheading:"Download Now"
+        },
+        {
             img:"./images/registrationform.png",
             heading:"Proposal Form",
             subheading:"Download Now"
