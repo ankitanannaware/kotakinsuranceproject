@@ -7,6 +7,9 @@ const Brand=()=>{
             img:"./images/tata.png"
         },
         {
+            img:"./images/tata.png"
+        },
+        {
             img:"./images/honda.png"
         },
         {
