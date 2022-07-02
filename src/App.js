@@ -12,6 +12,8 @@ import GenerousBenefits from './generousbenefits/GenerousBenefits';
 import WaitTime from './waittime/WaitTime';
 import Garages from './garages/Garages';
 import DreamCar from './dreamcar/DreamCar';
+import NeedHelp from './needhelp/NeedHelp';
+import Questions from './questions/Questions';
 
 function App() {
   
@@ -29,6 +31,8 @@ function App() {
         <WaitTime/>
         {/* <Garages/> */}
         <DreamCar/>
+        <NeedHelp/>
+        {/* <Questions/> */}
         
       </div>
  

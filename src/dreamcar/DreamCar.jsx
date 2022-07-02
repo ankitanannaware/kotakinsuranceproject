@@ -1,43 +1,51 @@
-import { Stack, Typography } from "@mui/material"
-
+import { Card, CardContent, Stack, Typography } from "@mui/material"
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 const DreamCar=()=>{
     const carlogo=[
         {
             img:"./images/carimg1.png",
-            heading:"Product Brochure",
-            subheading:"Download Now"
+            heading:"For entry segment vehicles",
+            subheading:"Premium starting @ 2502 "
         },
         {
             img:"./images/carimg2.png",
-            heading:"Product Brochure",
-            subheading:"Download Now"
+            heading:"For premium vehicles",
+            subheading:"Premium starting @ 5000"
         },
         {
             img:"./images/carimg3.png",
-            heading:"Product Brochure",
-            subheading:"Download Now"
+            heading:"For luxury vehicles",
+            subheading:"Premium starting @ 8000"
         },
     ]
     return(
         <div>
-   
-             <Stack marginTop="200px" textAlign="center">
+             <Stack marginTop="200px" marginLeft="350px">
              <Typography variant="h3" fontWeight="bold">The Perfect Coverage For <span style={{"color":"red"}}>Your Dream Car</span></Typography><br/>
-             <Typography variant="h5" fontWeight="bold" color="gray"><img src="./images/moneywing.png"/>  Premium starting at just ₹ 2502</Typography><br/>
+             <Typography variant="h5" fontWeight="bold" color="gray" marginLeft="300px"><img src="./images/moneywing.png"/>  Premium starting at just ₹ 2502</Typography><br/>
              </Stack>
-             <div style={{"marginTop":"160px","display":"flex","marginLeft":"210px"}}>
-                {
-                    carlogo.map((logo)=>{
-                        return(
-                        <Stack direction="row" width="380px" height="120px" border="1px solid blue" borderRadius="20px" padding="30px" backgroundColor="#1a237e" margin="10px"> 
-                            <img src={logo.img}/>  
-                            <Typography variant="h5" color="white" marginLeft="20px" >{logo.heading}<br/><span style={{"fontSize":"15px"}}>{logo.subheading}</span></Typography>
-                            
-                        </Stack>
-                        )
-                    })
-                }
-            </div>
+            <div style={{"marginTop":"10px","display":"flex","marginLeft":"160px","width":"2000px","height":"450px"}}>
+            {
+                carlogo.map((logo)=>{
+                    return(
+                    <Card sx={{ maxWidth: 370,"marginLeft":"50px","borderRadius":"20px","boxShadow":"3px 3px 3px gray inset"}}>
+                    <CardContent><img src={logo.img} style={{"width":"350px","height":"200px","padding":"22px"}}/></CardContent>
+                    <CardContent  sx={{"paddingLeft":"30px"}}>
+                        <Typography fontSize="25px" fontWeight="bold">
+                        {logo.heading}
+                        </Typography>
+                        <Typography fontSize="25px" fontWeight="bold" color="error" marginTop="10px">
+                        {logo.subheading}
+                        </Typography>
+                        <Typography variant="h6" color="error" marginTop="35px">
+                            Get Quote in 2 mins  <ArrowForwardIcon/>  
+                        </Typography>
+                    </CardContent>
+                </Card>
+                    )
+                })
+            }
+           </div>
         </div>
     )
 }
