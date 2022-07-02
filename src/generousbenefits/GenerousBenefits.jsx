@@ -15,7 +15,7 @@ import ReceiptOutlinedIcon from '@mui/icons-material/ReceiptOutlined';
 const GenerousBenefits=()=>{
     return(
         <div>
-         <Grid container spacing={2} marginTop="120px" marginLeft="320px">
+         <Grid container spacing={2} marginTop="120px" marginLeft="260px">
             <Grid item >
                 <Typography variant="h6" color="error">
                    GENEROUS BENEFITS

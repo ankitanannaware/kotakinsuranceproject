@@ -10,6 +10,8 @@ import QuickSupport from './quicksupport/QuickSupport';
 import SupremeOffer from './supremeoffer/SupremeOffer';
 import GenerousBenefits from './generousbenefits/GenerousBenefits';
 import WaitTime from './waittime/WaitTime';
+import Garages from './garages/Garages';
+import DreamCar from './dreamcar/DreamCar';
 
 function App() {
   
@@ -25,6 +27,9 @@ function App() {
         <SupremeOffer/>
         <GenerousBenefits/>
         <WaitTime/>
+        {/* <Garages/> */}
+        <DreamCar/>
+        
       </div>
  
   );
