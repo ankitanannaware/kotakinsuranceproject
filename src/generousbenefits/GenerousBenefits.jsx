@@ -14,8 +14,8 @@ import ReceiptOutlinedIcon from '@mui/icons-material/ReceiptOutlined';
 
 const GenerousBenefits=()=>{
     return(
-        <div>
-         <Grid container spacing={2} marginTop="120px" marginLeft="260px">
+        <Box sx={{maxWidth:1200 ,marginLeft:"auto",marginRight:"auto"}}>
+         <Grid container  marginTop="120px" marginLeft="100px">
             <Grid item >
                 <Typography variant="h6" color="error">
                    GENEROUS BENEFITS
@@ -23,7 +23,7 @@ const GenerousBenefits=()=>{
                 <Typography variant="h3" fontWeight="bold">
                    <span style={{"color":"red"}}>We Say,</span><br/>Why settle for less!   <img src="./images/human.png"/>
                 </Typography>
-                <Box sx={{ width: '100%',bgcolor: 'background.paper' }}>
+                <Box sx={{ bgcolor: 'background.paper' }}>
                     <nav>
                         <List>
                         <ListItem disablePadding>
@@ -73,14 +73,14 @@ const GenerousBenefits=()=>{
                    Show More +
                 </Typography>
           </Grid>
-          <Grid item align="center">
+          <Grid item marginLeft="60px" align="center">
             <img src="./images/iphone.png"/>
             <Typography variant="h5" color="black" fontWeight="bold">
              In case of a breakdown, we got you covered with <br/>towing, repairs, and more when you need it most.
             </Typography>
           </Grid>
          </Grid>
-        </div>
+        </Box>
     )
 }
 export default GenerousBenefits

@@ -30,10 +30,10 @@ const Logo=()=>{
     },
 ]
     return(
-        <div>
-           <Box  fullWidth sx={{height: 300,backgroundColor:'darkblue' ,marginTop:"100px"}}>
-           <Typography variant="h2" color="white" marginLeft="300px">We take your safety seriously</Typography>
-           <div style={{"display":"flex","justifyContent":"center", "marginTop":"100px"}}>
+        <div style={{"display":"flex","justifyContent":"center"}}>
+           <Box  fullWidth  sx={{height: 350,backgroundColor:'darkblue' ,marginTop:"100px"}}>
+           <Typography variant="h2" className="saftey" color="white" textAlign="center">We take your safety seriously</Typography>
+           <div style={{"display":"flex","justifyContent":"center", "marginTop":"50px"}}>
             {
                 logo.map((logo)=>{
                     return(

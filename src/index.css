@@ -1,8 +1,7 @@
 body {
   margin: 0;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -14,10 +13,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 .microchipimage{
   width: 50px;
   height: 50px;
   position: absolute;
   z-index: 1;
   margin-left:330px;  
+}
+::marker{
+  color:blue
+}
+.textfield{
+  color:aliceblue !important;
+  font-size:30px !important
+}
+.saftey{
+  padding-top: 50px !important;
 }

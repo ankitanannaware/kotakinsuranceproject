@@ -7,6 +7,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import { Box } from "@mui/system";
 
 const BasicTable=()=>{
     // function createData(PremiumFeatures , ComprehensivePlan, OnlyDamagePlan) {
@@ -78,15 +79,15 @@ const BasicTable=()=>{
     }
   ]
     return(
-        <div style={{"marginLeft":"150px"}}>
-            <Typography variant="h3" marginLeft="250px" marginTop="50px">
+        <Box sx={{maxWidth:1200 ,marginLeft:"auto",marginRight:"auto"}}>
+            <Typography fontSize="37px" fontWeight="bold" marginTop="50px" align="center">
             Don't Overspend On  <span style={{"color":"red"}}>Car Insurance</span>
             </Typography>
-            <Typography variant="h6" marginLeft="550px" marginBottom="50px">
+            <Typography variant="h6" marginBottom="50px" align="center">
             Compare plans with us <img src="./images/weight balance.png"/>
             </Typography>
-            <TableContainer >
-              <Table sx={{"marginLeft":"30px","marginRight":"30px","width":"1300px"}}>
+            <TableContainer>
+              <Table>
                 <TableHead>
                   <TableRow>
                     <TableCell sx={{"color":"darkblue","fontSize":"18px"}}>Premium Features</TableCell>
@@ -135,7 +136,7 @@ const BasicTable=()=>{
               </Table>
             </TableContainer>
             
-        </div>
+        </Box>
     )
 }
 export default BasicTable

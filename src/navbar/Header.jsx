@@ -1,14 +1,51 @@
-import { Link } from '@mui/material';
+import { AppBar, Box, IconButton, Link, Stack, Toolbar, Typography, } from '@mui/material';
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
 import GTranslateIcon from '@mui/icons-material/GTranslate';
 import AttachEmailOutlinedIcon from '@mui/icons-material/AttachEmailOutlined';
 import LoginIcon from '@mui/icons-material/Login';
 import {Button} from 'reactstrap'
 import {Navbar,NavbarBrand,Nav,DropdownToggle } from 'reactstrap';
+import MenuIcon from '@mui/icons-material/Menu';
 const Header=()=>{
+  const headerlink=[
+    {
+      name:"Motor"
+    },
+    {
+      name:"Health"
+    },
+    {
+      name:"Renewal"
+    },
+    {
+      name:"Claims"
+    },
+    {
+      name:"Contact us"
+    },
+    {
+      name:"..."
+    },
+    {
+      name:<PhoneInTalkIcon/>
+    },
+    {
+      name:"1800 266 4545"
+    },
+    {
+      name:<GTranslateIcon/>
+    },
+    {
+      name:"Eng"
+    },
+    {
+      name:<AttachEmailOutlinedIcon/>
+    },
+ 
+]
     return(
-        <div>
-        <Navbar color="white" light expand="md">
+        <div style={{"display":"flex","justifyContent":"center"}} >
+        {/* <Navbar color="white" expand="md">
           <NavbarBrand ><img src="./images/kotak-general-insurance.jpg" width="150px" height="100px"/>
           </NavbarBrand>
             <Nav navbar>
@@ -31,7 +68,27 @@ const Header=()=>{
             <Button style={{"borderRadius":"30px"}}className='text-light bg-danger ms-3'>
               <LoginIcon/>Login</Button>
             </Nav>
-        </Navbar>
+        </Navbar> */}
+            <Box fullWidth>
+                <AppBar position="static">
+                  <Toolbar sx={{"backgroundColor":"white"}}>
+                    <img src="./images/kotak-general-insurance.jpg" width="150px" height="100px"/>
+                    <div style={{"display":"flex","flexWrap":"wrap","marginLeft":"150px"}}>
+                        {
+                            headerlink.map((link)=>{
+                                return(
+                                        <Stack direction="row"> 
+                                            <Link underline="hover" marginLeft="30px" color="error" fontWeight="bold" fontSize="15px">{link.name}</Link>
+                                        </Stack>
+                                )
+                            })
+                        }
+                     </div>
+                       <Button variant="contained" style={{"marginLeft":"20px", "backgroundColor":"red", "borderRadius":"10px","padding":"10px"}}><LoginIcon/>Login</Button>
+                  </Toolbar>
+                </AppBar>
+            </Box>
+
       </div>
     )
 }

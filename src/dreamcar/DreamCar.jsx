@@ -1,4 +1,4 @@
-import { Card, CardContent, Stack, Typography } from "@mui/material"
+import { Box, Card, CardContent, Stack, Typography } from "@mui/material"
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 const DreamCar=()=>{
     const carlogo=[
@@ -19,12 +19,12 @@ const DreamCar=()=>{
         },
     ]
     return(
-        <div>
-             <Stack marginTop="200px" marginLeft="350px">
+        <Box sx={{maxWidth:1200 ,marginLeft:"auto",marginRight:"auto"}}>
+             <Stack marginTop="200px" textAlign="center">
              <Typography variant="h3" fontWeight="bold">The Perfect Coverage For <span style={{"color":"red"}}>Your Dream Car</span></Typography><br/>
-             <Typography variant="h5" fontWeight="bold" color="gray" marginLeft="300px"><img src="./images/moneywing.png"/>  Premium starting at just ₹ 2502</Typography><br/>
+             <Typography variant="h5" fontWeight="bold" color="gray"><img src="./images/moneywing.png"/>  Premium starting at just ₹ 2502</Typography><br/>
              </Stack>
-            <div style={{"marginTop":"10px","display":"flex","marginLeft":"160px","width":"2000px","height":"450px"}}>
+            <div style={{"marginTop":"10px","display":"flex","width":"2000px","height":"450px"}}>
             {
                 carlogo.map((logo)=>{
                     return(
@@ -46,7 +46,7 @@ const DreamCar=()=>{
                 })
             }
            </div>
-        </div>
+        </Box>
     )
 }
 export default DreamCar

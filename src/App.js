@@ -14,6 +14,10 @@ import Garages from './garages/Garages';
 import DreamCar from './dreamcar/DreamCar';
 import NeedHelp from './needhelp/NeedHelp';
 import Questions from './questions/Questions';
+import Kotak from './Kotak/Kotak';
+import Footer from './footer/Footer';
+
+
 
 function App() {
   
@@ -32,8 +36,11 @@ function App() {
         {/* <Garages/> */}
         <DreamCar/>
         <NeedHelp/>
-        {/* <Questions/> */}
-        
+        <Questions/>
+        <Kotak/>
+        <Footer/> 
+      
+      
       </div>
  
   );

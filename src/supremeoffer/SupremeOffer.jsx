@@ -38,18 +38,18 @@ const SupremeOffer=()=>{
         },
 
     ]
-    return(
-        <div>
-          <Box textAlign="center" marginTop="130px">
-            <Typography variant="subtitle1" color="red">SUPREME OFFERINGS</Typography>
-            <Typography variant="h3" color="red" fontWeight="bold">Amazing Things <span style={{"color":"black"}}>Await In Your Policy</span></Typography>
-            <Typography variant="h6" color="gray">Cause awesomeness has no ending <AllInclusiveIcon/></Typography>
+    return( 
+        <div> 
+          <Box sx={{maxWidth:1200 ,marginLeft:"auto",marginRight:"auto"}} marginTop="130px">
+            <Typography variant="subtitle1" color="red" textAlign="center">SUPREME OFFERINGS</Typography>
+            <Typography variant="h3" color="red" fontWeight="bold" textAlign="center">Amazing Things <span style={{"color":"black"}}>Await In Your Policy</span></Typography>
+            <Typography variant="h6" color="gray" textAlign="center">Cause awesomeness has no ending <AllInclusiveIcon/></Typography>
             <div style={{"display":"flex","justifyContent":"center",}}>
             <Typography variant="subtitle1" color="red" marginRight="40px">Covered</Typography>
             <Typography variant="subtitle1" color="gray"> Not Covered</Typography>
             </div>
           </Box>
-            <div style={{"width":"1600px","display":"flex" ,"flexWrap":"wrap","justifyContent":"center"}}>
+            <Box sx={{maxWidth:1280 ,marginLeft:"auto",marginRight:"auto",display:"flex",flexWrap:"wrap"}}  >
               {
                   offer.map((offer)=>{
                       return(
@@ -78,7 +78,7 @@ const SupremeOffer=()=>{
                       )
                   })
               }
-            </div>
+            </Box>
             <Typography variant="h6" color="error" textAlign="center" sx={{"textDecoration":"underline"}}>
               Show more +
             </Typography>

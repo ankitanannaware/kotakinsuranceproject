@@ -1,4 +1,4 @@
-import { Card, CardContent, CardMedia, Stack, Typography } from "@mui/material"
+import { Box, Card, CardContent, CardMedia, Stack, Typography } from "@mui/material"
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 const NeedHelp=()=>{
     const helplogo=[
@@ -22,11 +22,11 @@ const NeedHelp=()=>{
         },
     ]
     return(
-        <div>
-            <Stack marginTop="200px" marginLeft="300px">
+        <Box sx={{maxWidth:1200 ,marginLeft:"auto",marginRight:"auto"}}>
+            <Stack marginTop="200px" textAlign="center">
              <Typography variant="h3" fontWeight="bold"><span style={{"color":"red"}}> Need help? </span>Head over to our Learning Center!</Typography><br/>
             </Stack>
-             <div style={{"marginTop":"10px","display":"flex","marginLeft":"160px","width":"2000px","height":"500px"}}>
+             <div style={{"marginTop":"10px","display":"flex","width":"2100px","height":"500px"}}>
             {
                 helplogo.map((logo)=>{
                     return(
@@ -51,7 +51,7 @@ const NeedHelp=()=>{
                 })
             }
            </div>
-        </div>
+        </Box>
     )
 }
 export default NeedHelp

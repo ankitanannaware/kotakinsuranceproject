@@ -34,7 +34,8 @@ const Brand=()=>{
         }
     ]
     return(
-        <Box width="900px" height="400px" marginLeft="350px">
+        <div style={{"display":"flex","justifyContent":"center"}}>
+        <Box width="900px" height="400px">
            <Typography variant="h3" align="center" marginTop="100px">
            Car Insurance For Your <span style={{"color":"red"}}>Favorite Brands</span>
             </Typography>
@@ -56,6 +57,7 @@ const Brand=()=>{
                See All 40 Brands <img src="./images/downarrow.png"/>
             </Typography>
         </Box>
+        </div>
     )
 }
 export default Brand
