@@ -6,7 +6,18 @@ import LoginIcon from '@mui/icons-material/Login';
 import {Button} from 'reactstrap'
 import {Navbar,NavbarBrand,Nav,DropdownToggle } from 'reactstrap';
 import MenuIcon from '@mui/icons-material/Menu';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 const Header=()=>{
+  // const [value, setValue] = useState([])
+  // useEffect(()=>{
+  //    axios.get("http://localhost:1337/sections")
+  //    .then((res)=>{
+  //     console.log("res",res.data[0].link);
+  //     setValue(res.data[0].link)    
+  //   })
+  //    .catch((err)=>{console.log("err",err)})
+  // },[])
   const headerlink=[
     {
       name:"Motor"
@@ -45,6 +56,7 @@ const Header=()=>{
 ]
     return(
         <div style={{"display":"flex","justifyContent":"center"}} >
+        
         {/* <Navbar color="white" expand="md">
           <NavbarBrand ><img src="./images/kotak-general-insurance.jpg" width="150px" height="100px"/>
           </NavbarBrand>
@@ -75,14 +87,15 @@ const Header=()=>{
                     <img src="./images/kotak-general-insurance.jpg" width="150px" height="100px"/>
                     <div style={{"display":"flex","flexWrap":"wrap","marginLeft":"150px"}}>
                         {
-                            headerlink.map((link)=>{
+                            headerlink.map((data)=>{
                                 return(
                                         <Stack direction="row"> 
-                                            <Link underline="hover" marginLeft="30px" color="error" fontWeight="bold" fontSize="15px">{link.name}</Link>
+                                            <Link underline="hover" marginLeft="30px" color="error" fontWeight="bold" fontSize="15px">{data.name}</Link>
                                         </Stack>
                                 )
                             })
                         }
+                        
                      </div>
                        <Button variant="contained" style={{"marginLeft":"20px", "backgroundColor":"red", "borderRadius":"10px","padding":"10px"}}><LoginIcon/>Login</Button>
                   </Toolbar>

@@ -13,15 +13,18 @@ import QuickSupport from './QuickSupport'
 import SupremeOffer from './SupremeOffer'
 import BasicTable from './BasicTable'
 import WaitTime from './WaitTime'
+import MuiModal from '../MuiModal'
+
+
 
 
 const ParentComponent = () => {
   return (
     <div>
     
-        <Header/>
+        {/* <Header/> */}
         <Heading/>
-        <Logo/>
+        {/* <Logo/>
         <BasicTable/>
         <Brand/>
         <QuickSupport/>
@@ -32,7 +35,11 @@ const ParentComponent = () => {
         <NeedHelp/>
         <Questions/>
         <Kotak/>
-        <Footer/> 
+        <Footer/>  */}
+        
+        {/* <MuiModal/> */}
+       
+        
       
     </div>
   )

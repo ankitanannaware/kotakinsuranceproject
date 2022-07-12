@@ -17,6 +17,8 @@ import Questions from './MainComponent/ParentComponent/Questions';
 import Kotak from './MainComponent/ParentComponent/Kotak';
 import Footer from './MainComponent/ParentComponent/Footer';
 import ParentComponent from './MainComponent/ParentComponent/ParentComponent';
+import Example from './Example';
+import Example1 from './Example1';
 
 
 
@@ -25,8 +27,11 @@ function App() {
   
   return (
   
-      <div className="App">   
+      <div className="App"> 
+      {/* <Example/>   */}
         <ParentComponent/>
+        {/* <Example1/> */}
+        
        
       </div>
  

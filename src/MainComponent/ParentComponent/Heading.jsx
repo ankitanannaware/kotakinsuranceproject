@@ -1,4 +1,5 @@
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import MuiModal from '../MuiModal'
 import { Grid, Button, Link, Typography} from '@mui/material';
 import { Box} from '@mui/system';
 import { shadows } from '@mui/system'
@@ -6,6 +7,7 @@ import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
 import StarIcon from '@mui/icons-material/Star';
 import StarHalfIcon from '@mui/icons-material/StarHalf';
+import { useState } from 'react';
 
 const Heading=()=> {  
     
@@ -25,21 +27,25 @@ const Heading=()=> {
                             <Link sx={{"color":"primary","marginLeft":"20px"}} underline="none">Renew Now</Link>
                             </Grid>
                             <h4 className='ms-4 mt-3' style={{"color":"darkblue"}}>Get your Car Insured <span style={{color:"red", fontStyle:"italic",fontWeight:"bold"}}>Now</span></h4>
-                            <Stack direction="row" spacing={2} sx={{"marginLeft":"35px","marginTop":"15px" ,"color":"primary"}}>
-                            <TextField id="standard-helperText"  label="Car Registration Number" 
-                            placeholder="TG 09 AS 1589" 
-                            variant="standard" />
-                            <TextField id="standard-helperText" label="Mobile Number" placeholder="+91 9652521502" variant="standard" />
-                            <TextField id="standard-helperText" label="Email ID"placeholder="Enter your email id" variant="standard" />
-                            </Stack>
+                            
+                                <Stack direction="row" spacing={2} sx={{"marginLeft":"35px","marginTop":"15px" ,"color":"primary"}}>
+                                <TextField id="standard-helperText"  label="Car Registration Number" 
+                                placeholder="enter car registration number" 
+                                variant="standard" />
+                                <TextField id="standard-helperText" label="Mobile Number" placeholder="enter mobile number" variant="standard" />
+                                <TextField id="standard-helperText" label="Email ID"placeholder="Enter your email id" variant="standard" />
+                                </Stack>
+                          
                             <Typography variant="subtitle1" color="primary" marginLeft={4} marginTop={2}>Don’t know my car registration number</Typography>
                             <Typography variant="subtitle1" color="primary" marginLeft={4}>Got a new Car</Typography>
-                            <Grid direction="row" marginLeft="20px" marginTop="15px"> 
-                            <Button variant="contained" color="error" sx={{"textTransform":"capitalize"}}>Get a Quick Quote</Button>
+                            <Grid direction="row" marginLeft="10px"> 
+                            
+                            <Button variant="text"><MuiModal/></Button>
                             <img src="./images/giftbox.png"/>
                             <Button variant="text" sx={{"textTransform":"capitalize"}}>Buy online to avail 5% discount<br></br>
                             on policy term</Button>
                             <img src="./images/redcar.png" width="150px" height="80px"/>
+                
                         </Grid>
                     </Box>
                 </Grid>
